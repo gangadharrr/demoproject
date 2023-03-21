@@ -1,180 +1,110 @@
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (master)
-$ git checkout main
-Switched to a new branch 'main'
-branch 'main' set up to track 'origin/main'.
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
+$ git log --oneline
+f073c79 (HEAD -> main, origin/main) gitcommands file added
+2c522bd Merge branch 'developer'
+840ab80 updated text in dailytask.txt
+6e909b7 HelloWorld.c Added
+a6aa1b2 (origin/master, master) dailytask.txt modified
+6a9dc80 Java File created
+91eaa3c Jupyter notebook File created
+47069e0 Python File created
+e51f0b4 Merge branch 'master' of https://github.com/gangadharrr/demoproject
+ea52570 greetings.txt updated
+9fccbc2 Initial commit
+cabfd34 third commit
+296f6fe second commit
+b896010 initial commit
 
 Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git ls-files
-README.md
+$ git push origin --delete salve
+error: unable to delete 'salve': remote ref does not exist
+error: failed to push some refs to 'https://github.com/gangadharrr/demoproject.git'
 
 Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git add --all
+$ git branch -D slave
+Deleted branch slave (was d43489f).
 
 Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git ls-files
-README.md
-sample.txt
+$ git branch
+* main
+  master
 
 Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git checkout master
-Switched to branch 'master'
+$ git checkout -b dev3
+Switched to a new branch 'dev3'
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (master)
-$ git checkout main
-Switched to branch 'main'
-Your branch is up to date with 'origin/main'.
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git cherry-pick b896010
+Auto-merging dailytask.txt
+[dev3 9bda044] initial commit
+ Author: Star <gangadharganga90@gmail.com>
+ Date: Mon Mar 20 15:07:05 2023 +0530
+ 1 file changed, 1 insertion(+)
+ create mode 100644 demo.txt
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ touch HelloWorld.c
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ ls
-HelloWorld.c  README.md
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git commit -m "HelloWorld.c Added"
-[main 6e909b7] HelloWorld.c Added
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 HelloWorld.c
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git ls-files
-HelloWorld.c
-README.md
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git push -u origin main
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git push origin dev3
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/gangadharrr/demoproject.git
-   9fccbc2..6e909b7  main -> main
-branch 'main' set up to track 'origin/main'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git checkout master
-Switched to branch 'master'
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (master)
-$ git push origin --delete main
-To https://github.com/gangadharrr/demoproject.git
- ! [remote rejected] main (refusing to delete the current brann)
-error: failed to push some refs to 'https://github.com/gangadhit'
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (master)
-$ git checkout -b "developer"
-Switched to a new branch 'developer'
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git clone origin master
-fatal: repository 'origin' does not exist
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git clone origin\master
-fatal: repository 'originmaster' does not exist
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git commit -m "initial files commit"
-On branch developer
-nothing to commit, working tree clean
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git commit -m "initial files commit"
-On branch developer
-nothing to commit, working tree clean
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git ls-files
-Disease.ipynb
-VideoLauncher.java
-dailytask.txt
-emailsender.py
-greeting.txt
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git push -u origin developer
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-remote:
-remote: Create a pull request for 'developer' on GitHub by vis
-remote:      https://github.com/gangadharrr/demoproject/pull/n
-remote:
-To https://github.com/gangadharrr/demoproject.git
- * [new branch]      developer -> developer
-branch 'developer' set up to track 'origin/developer'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git add .
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git commit -m "updated text in dailytask.txt"
-[developer 840ab80] updated text in dailytask.txt
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git push -u origin developer
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), completed with 1 local o
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'dev3' on GitHub by visiting:
+remote:      https://github.com/gangadharrr/demoproject/pull/new/dev3
+remote:
 To https://github.com/gangadharrr/demoproject.git
-   a6aa1b2..840ab80  developer -> developer
-branch 'developer' set up to track 'origin/developer'.
+ * [new branch]      dev3 -> dev3
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (developer)
-$ git merge master
-Already up to date.
-Merge made by the 'ort' strategy.
- Disease.ipynb      | 845 +++++++++++++++++++++++++++++++++++++++++++++++++++++
- VideoLauncher.java | 135 +++++++++
- dailytask.txt      |   1 +
- emailsender.py     |  21 ++
- greeting.txt       |   0
- 5 files changed, 1002 insertions(+)
- create mode 100644 Disease.ipynb
- create mode 100644 VideoLauncher.java
- create mode 100644 dailytask.txt
- create mode 100644 emailsender.py
- create mode 100644 greeting.txt
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git branch
+* dev3
+  main
+  master
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git push origin main
-Enumerating objects: 4, done.
-Counting objects: 100% (4/4), done.
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git push origin --delete slave
+To https://github.com/gangadharrr/demoproject.git
+ - [deleted]         slave
+
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git revert HEAD --no-edit
+[dev3 1d8da29] Revert "initial commit"
+ Date: Tue Mar 21 16:27:19 2023 +0530
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 demo.txt
+
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git push origin dev3
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
 Delta compression using up to 8 threads
 Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 341 bytes | 341.00 KiB/s, done.
+Writing objects: 100% (2/2), 249 bytes | 249.00 KiB/s, done.
 Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/gangadharrr/demoproject.git
-   6e909b7..2c522bd  main -> main
+   9bda044..1d8da29  dev3 -> dev3
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git branch -d developer
-Deleted branch developer (was 840ab80).
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git cherry-pick b896010^C
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ git push origin --delete developer
-To https://github.com/gangadharrr/demoproject.git
- - [deleted]         developer
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
+$ git cherry-pick a6aa1b2
+Auto-merging dailytask.txt
+CONFLICT (content): Merge conflict in dailytask.txt
+error: could not apply a6aa1b2... dailytask.txt modified
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git cherry-pick --continue".
+hint: You can instead skip this commit with "git cherry-pick --skip".
+hint: To abort and get back to the state before "git cherry-pick",
+hint: run "git cherry-pick --abort".
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
-$ ^C
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3|CHERRY-PICKING)
+$ git cherry-pick --abort
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/demo (main)
+Star@DESKTOP-N4VV2LE MINGW64 /d/demo (dev3)
 $
