@@ -1,408 +1,267 @@
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice
+Star@5CG9410FJD MINGW64 /d/Stash Git
 $ git init
-Initialized empty Git repository in D:/git practice/.git/
+Initialized empty Git repository in D:/Stash Git/.git/
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git remote origin "https://github.com/gangadharrr/gitPratice.git"
-error: unknown subcommand: `origin'
-usage: git remote [-v | --verbose]
-   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
-   or: git remote rename [--[no-]progress] <old> <new>
-   or: git remote remove <name>
-   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
-   or: git remote [-v | --verbose] show [-n] <name>
-   or: git remote prune [-n | --dry-run] <name>
-   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
-   or: git remote set-branches [--add] <name> <branch>...
-   or: git remote get-url [--push] [--all] <name>
-   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
-   or: git remote set-url --add <name> <newurl>
-   or: git remote set-url --delete <name> <url>
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add .
 
-    -v, --verbose         be verbose; must be placed before a subcommand
-
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git remote add origin "https://github.com/gangadharrr/gitPratice.git"
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git add -all
-error: did you mean `--all` (with two dashes)?
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
 $ git commit -m "initial commit"
-[master (root-commit) 54a1475] initial commit
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 test1.txt
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git push -u origin master
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Writing objects: 100% (3/3), 214 bytes | 214.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/gangadharrr/gitPratice.git
- * [new branch]      master -> master
-branch 'master' set up to track 'origin/master'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git commit -m "test2 file Added"
-[master d5b7be1] test2 file Added
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 test2.txt
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git push -u origin master
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 245 bytes | 245.00 KiB/s, done.
-Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/gangadharrr/gitPratice.git
-   54a1475..d5b7be1  master -> master
-branch 'master' set up to track 'origin/master'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git checkout -b dev1
-Switched to a new branch 'dev1'
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git switch dev1
-Already on 'dev1'
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git merge master
-Already up to date.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git switch master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git commit -m "test2 file updated"
-[master ad0d4ee] test2 file updated
+[master (root-commit) d40d4e1] initial commit
  1 file changed, 1 insertion(+)
+ create mode 100644 Hello.txt
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git push -u origin master
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 281 bytes | 281.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/gangadharrr/gitPratice.git
-   d5b7be1..ad0d4ee  master -> master
-branch 'master' set up to track 'origin/master'.
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add .
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git switch dev1
-Switched to branch 'dev1'
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "mapstore file added"
+Saved working directory and index state On master: mapstore file added
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git add --all
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add .
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git commit -m "test1 file updated"
-[dev1 5a101d8] test1 file updated
- 1 file changed, 1 insertion(+)
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "record store file added"
+Saved working directory and index state On master: record store file added
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git push -u origin dev1
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 282 bytes | 282.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-remote:
-remote: Create a pull request for 'dev1' on GitHub by visiting:
-remote:      https://github.com/gangadharrr/gitPratice/pull/new/dev1
-remote:
-To https://github.com/gangadharrr/gitPratice.git
- * [new branch]      dev1 -> dev1
-branch 'dev1' set up to track 'origin/dev1'.
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: record store file added
+stash@{1}: On master: mapstore file added
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git commit -m "test2 file updated with hi"
-On branch dev1
-Your branch is up to date with 'origin/dev1'.
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash apply
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   RecordStore.txt
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   test2.txt
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: record store file added
+stash@{1}: On master: mapstore file added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash apply stash@{1}
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Mapstore.txt
+        new file:   RecordStore.txt
+
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: record store file added
+stash@{1}: On master: mapstore file added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash drop
+Dropped refs/stash@{0} (ec224c3b94d21af06ce83864af07f07345a15ebb)
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: mapstore file added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash drop stash@{0}
+Dropped stash@{0} (a8fc74fc6f4817a554245b24a9c7b5fd2793d969)
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add .
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "File1 added"
+Saved working directory and index state On master: File1 added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: File1 added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add .
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "File2 added"
+Saved working directory and index state On master: File2 added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: File2 added
+stash@{1}: On master: File1 added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add .
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "slack files added"
+Saved working directory and index state On master: slack files added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: slack files added
+stash@{1}: On master: File2 added
+stash@{2}: On master: File1 added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash apply
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Slack1.txt
+        new file:   Slack2.txt
+
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash apply stash@{2}
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File1.txt
+        new file:   Mapstore.txt
+        new file:   RecordStore.txt
+        new file:   Slack1.txt
+        new file:   Slack2.txt
+
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash drop
+Dropped refs/stash@{0} (02b66f542ac80d153347f5d9a3165d1b890685e3)
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash drop
+Dropped refs/stash@{0} (73057a7fb6effa7a91a931b4b809ec71b1bd7fb3)
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash drop
+Dropped refs/stash@{0} (37f9a662f5b168e1dfdbe1cf2ad23a95bf1c556c)
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add "Mapstore.txt"
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "mapstore\ file added"
+Saved working directory and index state On master: mapstore\ file added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: mapstore\ file added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash apply
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   File1.txt
+        new file:   Mapstore.txt
+        new file:   RecordStore.txt
+        new file:   Slack1.txt
+        new file:   Slack2.txt
+
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash drop
+Dropped refs/stash@{0} (ed65d9e0cb4834b9cbeb5be6d142b76045f379a7)
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add "Mapstore.txt"
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git commit -m "mapstore file added"
+[master b53e67a] mapstore file added
+ 5 files changed, 7 insertions(+)
+ create mode 100644 File1.txt
+ create mode 100644 Mapstore.txt
+ create mode 100644 RecordStore.txt
+ create mode 100644 Slack1.txt
+ create mode 100644 Slack2.txt
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git log --oneline
+b53e67a (HEAD -> master) mapstore file added
+d40d4e1 initial commit
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git add "RecordStore.txt"
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "all files added"
+No local changes to save
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash save "all files added"
+Saved working directory and index state On master: all files added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: all files added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git ls-files
+File1.txt
+Hello.txt
+Mapstore.txt
+RecordStore.txt
+Slack1.txt
+Slack2.txt
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git reset --hard^C
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git reset --hard d40d4e1
+HEAD is now at d40d4e1 initial commit
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git ls-files
+Hello.txt
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: all files added
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git apply
+
+
+
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ ^C
+
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash apply
+CONFLICT (modify/delete): Slack1.txt deleted in Updated upstream and modified in Stashed changes.  Version Stashed changes of Slack1.txt left in tree.
+On branch master
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+        deleted by us:   Slack1.txt
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git log --oneline
-5a101d8 (HEAD -> dev1, origin/dev1) test1 file updated
-d5b7be1 test2 file Added
-54a1475 initial commit
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
+$ git stash list
+stash@{0}: On master: all files added
 
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git commit -m "test2 file updated with hi"
-[dev1 c7232a7] test2 file updated with hi
- 1 file changed, 1 insertion(+)
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git push -u origin dev1
-Enumerating objects: 5, done.
-Counting objects: 100% (5/5), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (3/3), 283 bytes | 283.00 KiB/s, done.
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/gangadharrr/gitPratice.git
-   5a101d8..c7232a7  dev1 -> dev1
-branch 'dev1' set up to track 'origin/dev1'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git switch master,
-fatal: invalid reference: master,
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git switch master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git switch dev1
-Switched to branch 'dev1'
-Your branch is up to date with 'origin/dev1'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git log -oneline
-fatal: unrecognized argument: -oneline
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git log --oneline
-c7232a7 (HEAD -> dev1, origin/dev1) test2 file updated with hi
-5a101d8 test1 file updated
-d5b7be1 test2 file Added
-54a1475 initial commit
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ ^C
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev1)
-$ git switch master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git cherry-pick 5a101d8
-[master 29d5e44] test1 file updated
- Date: Wed Mar 22 13:28:26 2023 +0530
- 1 file changed, 1 insertion(+)
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git log --oneline
-29d5e44 (HEAD -> master) test1 file updated
-ad0d4ee (origin/master) test2 file updated
-d5b7be1 test2 file Added
-54a1475 initial commit
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git revert HEAD --no-edit
-[master ae2d0a5] Revert "test1 file updated"
- Date: Wed Mar 22 15:23:54 2023 +0530
- 1 file changed, 1 deletion(-)
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git log --oneline
-ae2d0a5 (HEAD -> master) Revert "test1 file updated"
-29d5e44 test1 file updated
-ad0d4ee (origin/master) test2 file updated
-d5b7be1 test2 file Added
-54a1475 initial commit
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git cherry-pick 5a101d8
-[master ba1bc7c] test1 file updated
- Date: Wed Mar 22 13:28:26 2023 +0530
- 1 file changed, 1 insertion(+)
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git cherry-pick c7232a7
-Auto-merging test2.txt
-CONFLICT (content): Merge conflict in test2.txt
-error: could not apply c7232a7... test2 file updated with hi
-hint: After resolving the conflicts, mark them with
-hint: "git add/rm <pathspec>", then run
-hint: "git cherry-pick --continue".
-hint: You can instead skip this commit with "git cherry-pick --skip".
-hint: To abort and get back to the state before "git cherry-pick",
-hint: run "git cherry-pick --abort".
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master|CHERRY-PICKING)
-$ git log --oneline
-ba1bc7c (HEAD -> master) test1 file updated
-ae2d0a5 Revert "test1 file updated"
-29d5e44 test1 file updated
-ad0d4ee (origin/master) test2 file updated
-d5b7be1 test2 file Added
-54a1475 initial commit
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master|CHERRY-PICKING)
-$ git cherry-pick -f c7232a7
-usage: git cherry-pick [--edit] [-n] [-m <parent-number>] [-s] [-x] [--ff]
-                       [-S[<keyid>]] <commit>...
-   or: git cherry-pick (--continue | --skip | --abort | --quit)
-
-    --quit                end revert or cherry-pick sequence
-    --continue            resume revert or cherry-pick sequence
-    --abort               cancel revert or cherry-pick sequence
-    --skip                skip current commit and continue
-    --cleanup <mode>      how to strip spaces and #comments from message
-    -n, --no-commit       don't automatically commit
-    -e, --edit            edit the commit message
-    -s, --signoff         add a Signed-off-by trailer
-    -m, --mainline <parent-number>
-                          select mainline parent
-    --rerere-autoupdate   update the index with reused conflict resolution if possible
-    --strategy <strategy>
-                          merge strategy
-    -X, --strategy-option <option>
-                          option for merge strategy
-    -S, --gpg-sign[=<key-id>]
-                          GPG sign commit
-    -x                    append commit name
-    --ff                  allow fast-forward
-    --allow-empty         preserve initially empty commits
-    --allow-empty-message
-                          allow commits with empty messages
-    --keep-redundant-commits
-                          keep redundant, empty commits
-
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master|CHERRY-PICKING)
-$ git cherry-pick --continue
-error: Committing is not possible because you have unmerged files.
-hint: Fix them up in the work tree, and then use 'git add/rm <file>'
-hint: as appropriate to mark resolution and make a commit.
-fatal: Exiting because of an unresolved conflict.
-U       test2.txt
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master|CHERRY-PICKING)
-$ git cherry-pick --quit
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git checkout -b -dev2
-fatal: '-dev2' is not a valid branch name
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git checkout -b dev2
-Switched to a new branch 'dev2'
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev2)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev2)
-$ git commit -m "git commands text file added"
-[dev2 15da1a7] git commands text file added
- 2 files changed, 310 insertions(+), 1 deletion(-)
- create mode 100644 git commands.txt
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev2)
-$ git push origin dev2
-Enumerating objects: 12, done.
-Counting objects: 100% (12/12), done.
-Delta compression using up to 8 threads
-Compressing objects: 100% (8/8), done.
-Writing objects: 100% (9/9), 3.11 KiB | 1.56 MiB/s, done.
-Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (1/1), done.
-remote:
-remote: Create a pull request for 'dev2' on GitHub by visiting:
-remote:      https://github.com/gangadharrr/gitPratice/pull/new/dev2
-remote:
-To https://github.com/gangadharrr/gitPratice.git
- * [new branch]      dev2 -> dev2
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (dev2)
-$ git switch master
-Switched to branch 'master'
-Your branch is ahead of 'origin/master' by 3 commits.
-  (use "git push" to publish your local commits)
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git push origin master
-Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/gangadharrr/gitPratice.git
-   ad0d4ee..ba1bc7c  master -> master
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git cherry-pick c7232a7
-Auto-merging test2.txt
-CONFLICT (content): Merge conflict in test2.txt
-error: could not apply c7232a7... test2 file updated with hi
-hint: After resolving the conflicts, mark them with
-hint: "git add/rm <pathspec>", then run
-hint: "git cherry-pick --continue".
-hint: You can instead skip this commit with "git cherry-pick --skip".
-hint: To abort and get back to the state before "git cherry-pick",
-hint: run "git cherry-pick --abort".
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master|CHERRY-PICKING)
-$ git cherry-pick --quit
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git cherry-pick c7232a7
-error: Cherry-picking is not possible because you have unmerged files.
-hint: Fix them up in the work tree, and then use 'git add/rm <file>'
-hint: as appropriate to mark resolution and make a commit.
-fatal: cherry-pick failed
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git cherry-pick c7232a7
-error: your local changes would be overwritten by cherry-pick.
-hint: commit your changes or stash them to proceed.
-fatal: cherry-pick failed
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git log --oneline
-ba1bc7c (HEAD -> master, origin/master) test1 file updated
-ae2d0a5 Revert "test1 file updated"
-29d5e44 test1 file updated
-ad0d4ee test2 file updated
-d5b7be1 test2 file Added
-54a1475 initial commit
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git cherry-pick c7232a7
-error: your local changes would be overwritten by cherry-pick.
-hint: commit your changes or stash them to proceed.
-fatal: cherry-pick failed
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git add --all
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
-$ git push origin master
-Everything up-to-date
-
-Star@DESKTOP-N4VV2LE MINGW64 /d/git practice (master)
+Star@5CG9410FJD MINGW64 /d/Stash Git (master)
 $
